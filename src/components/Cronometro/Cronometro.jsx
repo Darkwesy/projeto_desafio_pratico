@@ -1,7 +1,7 @@
 import './Cronometro_style.css'
 import { useState, useEffect } from 'react';
 
-export const Cronometro = () => {
+function Cronometro () {
   const [second, SetSeconds] = useState(0);
 
   useEffect(() => {
@@ -19,3 +19,5 @@ export const Cronometro = () => {
     </div>
   )
 }
+
+export default Cronometro

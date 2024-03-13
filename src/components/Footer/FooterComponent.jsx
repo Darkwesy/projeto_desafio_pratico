@@ -1,8 +1,10 @@
 import './FooterComponent_style.css'
-export const FooterComponent = () => {
+function FooterComponent () {
   return (
     <div className="footer__wrapper">
       <p>Siga @alecarvalho.naildesigner</p>
     </div>
   )
 }
+
+export default FooterComponent
