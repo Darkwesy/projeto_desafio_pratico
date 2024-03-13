@@ -1,0 +1,26 @@
+ul > li {
+  list-style-type: none;
+}
+
+.navbar__wrapper {
+  padding: 2% 15%;
+}
+
+.navbar__wrapper__ul {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.navbar__wrapper__ul__li a {
+  border-radius: 2rem;
+  padding: 8px 16px;
+  color: white;
+  transition: all 0.3s linear;
+}
+
+.navbar__wrapper__ul__li a:hover {
+  background-color: #f8f8f8c0;
+  color: #000;
+}

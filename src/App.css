@@ -1,0 +1,30 @@
+.container {  
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.2fr 1fr 0.2fr;
+  gap: 16px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "H H"
+    "M M"
+    "F F";
+}
+
+header {
+  width: 100%;
+  grid-area: H;
+}
+
+main {
+  grid-area: M;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  width: 100%;
+  grid-area: F;
+}
