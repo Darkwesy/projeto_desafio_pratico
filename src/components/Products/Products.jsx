@@ -33,9 +33,8 @@ function Products () {
         </div>
        
       </div>
-
-      <div className="Products__Wrapper__Card">
-          <img className='Products__Wrapper__Card__Image' src={imgTest} alt="" />
+      <div className="Products__Wrapper__Image">
+          <img className='Products__Images' src={imgTest} alt="" />
       </div>
     </div>
   )

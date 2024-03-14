@@ -7,7 +7,7 @@ ul > li {
   height: 100%;
 }
 .navbar__wrapper {
-  padding: 2% 15%;
+  padding: 1% 15%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -47,6 +47,7 @@ ul > li {
   padding: 8px 16px;
   color: white;
   transition: all 0.3s linear;
+  font-weight: 600;
   cursor: pointer;
   animation-name: buttonsEntrance;
   animation-duration: 2s;

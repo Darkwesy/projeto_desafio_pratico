@@ -4,7 +4,7 @@ import FooterComponent from './components/Footer/FooterComponent';
 import Home from './components/homeLogo/HomeLogo';
 import { useState } from 'react';
 import Card_Contato from './components/Card_Contato/Card_Contato';
-import Products from './components/Services/Products';
+import Products from './components/Products/Products';
 import Gallery from './components/Gallery/Gallery';
 
 function App() {
