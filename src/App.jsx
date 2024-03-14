@@ -1,20 +1,34 @@
 import './App.css'
 import Navbar from './components/Navbar/Navbar';
-import Cronometro from './components/Cronometro/Cronometro';
 import FooterComponent from './components/Footer/FooterComponent';
+import Home from './components/homeLogo/HomeLogo';
+import { useState } from 'react';
+import Card_Contato from './components/Card_Contato/Card_Contato';
+import Products from './components/Services/Products';
+import Gallery from './components/Gallery/Gallery';
 
 function App() {
+  const [currentSection, setCurrentSection] = useState('home');
+
+  const handleSectionChange = (section) => {
+    setCurrentSection(section);
+  };
+
+
   return (
     <div className="container">
       <header>
-        <Navbar/>
+        <Navbar onSectionChange={handleSectionChange} /> 
       </header>
       <main>
-        <Cronometro/>
+        {currentSection === 'home' && <Home/>}
+        {currentSection === 'servicos' && <Products/>}
+        {currentSection === 'galeria' && <Gallery/>}
+        {currentSection === 'contato' && <Card_Contato/>}
       </main>
       <footer>
         <FooterComponent/>
-      </footer>
+      </footer>    
     </div>
   )
 }

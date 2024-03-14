@@ -1,0 +1,69 @@
+.Products__Wrapper {
+  width: 100%;
+  height: 90%;
+  padding: 0 15%;
+  gap: 8px;
+  display: grid;
+  grid-template-columns: 4fr 2fr 2fr 2fr;
+  grid-template-rows: 2fr 2fr 2fr;
+  grid-template-areas: 
+  "PWC PCC ."
+  "PWC . ."
+  "PWC . .";
+  animation-name: ProductsEntrance;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes ProductsEntrance {
+  0% {opacity: 0; transform: scale(1.1);}
+  100% {opacity: 1; transform: scale(1);}
+}
+
+.Products__Wrapper__Description {
+  grid-area: PWC;
+  background: #ffffff12;
+  border-radius: 1rem;
+  padding: 5% 5%;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.Products__Wrapper__Description__Title {
+  color: pink;
+  font-weight: 600;
+}
+
+.Products__Wrapper__Description__Lists {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.Products__Wrapper__Description__List__Item {
+  font-weight: 200;
+}
+
+.Products__Wrapper__Description__List__Item > span {
+  font-weight: 600;
+  color: pink;
+}
+
+.Products__Wrapper__Card {
+  grid-area: PCC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.Products__Wrapper__Card__Image {
+  height: auto;
+  width: 100%;
+  border-radius: 1rem;
+}

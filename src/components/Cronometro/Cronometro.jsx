@@ -13,9 +13,9 @@ function Cronometro () {
 
   return (
     <div className="cronometro">
-      <h1>Cronometro</h1>
-      <span>{second}</span>
-      <p>Segundos</p>
+      <h2>Cronometro</h2>
+      <h1>{second}</h1>
+      <h3>Segundos</h3>
     </div>
   )
 }
