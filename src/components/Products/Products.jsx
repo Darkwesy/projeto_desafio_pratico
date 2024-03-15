@@ -1,14 +1,13 @@
-import './Products_style.css'
+import Slider from '../Slide_Products/Slide_Products';
+import './Products_style.css';
 
-import imgTest from '../../assets/products_assets/product_1.jpg'
-
-function Products () { 
+function Products() {
   return (
     <div className="Products__Wrapper">
       <div className="Products__Wrapper__Description">
 
         <h1 className='Products__Wrapper__Description__Title'>Serviços</h1>
-        
+
         <div className="Products__Wrapper__Description__Lists">
           <ul className='Products__Wrapper__Description__List'>
             <h2 className='Products__Wrapper__Description__List__Subtitle'>Unha Simples</h2>
@@ -31,11 +30,10 @@ function Products () {
             <li className='Products__Wrapper__Description__List__Item'>Spa dos Pés/Plastica dos Pés - <span>R$60,00</span></li>
           </ul>
         </div>
-       
       </div>
-      <div className="Products__Wrapper__Image">
-          <img className='Products__Images' src={imgTest} alt="" />
-      </div>
+        <div className='Products__Wrapper__Slider'>
+          <Slider />
+        </div>
     </div>
   )
 }
