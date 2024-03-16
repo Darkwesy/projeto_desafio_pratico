@@ -1,5 +1,6 @@
 import './Slide_style.css'
 import { useState } from "react";
+import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 
 function Slider() {
   const images = [
@@ -19,6 +20,7 @@ function Slider() {
       url: "/products_assets/product_5.jpg"
     }
   ];
+  
   const [actualIndex, setIndex] = useState(0);
 
   const nextSlide = () => {
@@ -34,11 +36,10 @@ function Slider() {
 
   return (
     <div className='Products__Wrapper__Slider'>
-      <p>{`Image Index - ${actualIndex+1}`}</p>
       <img className="Products__Images" src={images[actualIndex].url} alt={`Imagem ${actualIndex + 1}`} />
       <div className="Products__Wrapper__Slider__Buttons">
-        <button onClick={nextSlide}>Proxima Imagem</button>
-        <button onClick={backSlide}>Imagem Anterior</button>
+        <button onClick={backSlide}><MdArrowBackIos /></button>
+        <button onClick={nextSlide}><MdArrowForwardIos /></button>
       </div>
     </div>
   );
