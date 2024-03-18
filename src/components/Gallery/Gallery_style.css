@@ -1,0 +1,58 @@
+.Gallery__Wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2% 15%;
+  gap: 3rem;
+}
+
+.Gallery__Wrapper__BigCard {
+  width: 50%;
+  height: 800px;
+  max-height: 800px;
+  flex-shrink: 0;
+  animation: fadeInEntranceBigCard;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+.Gallery__Wrapper__BigCard__Image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.Gallery__Wrapper__Card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-height: calc(100vh - 400px);
+  overflow-y: auto;
+}
+
+.Gallery__Wrapper__Card__Image {
+  height: 140px;
+  width: 140px;
+  object-fit: cover;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.Gallery__Wrapper__Card__Item {
+  transition: all 1s ease-in-out;
+}
+
+@keyframes fadeInEntranceBigCard{
+  0% {
+    opacity: 0; 
+    transform: scale(1.1);
+    filter: saturate(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    filter: saturate(1);
+  }
+}
