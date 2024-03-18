@@ -1,6 +1,6 @@
 <h1 style="text-align: center; font-weight:300;">Identidade Digital Espaço Alê Carvalho</h1>
 
-<img src="./home_preview.gif" style="border-radius: 8px;">
+<img src="./preview_home.gif" style="border-radius: 8px;">
 
 <p>Projeto solicitado pelo professor <a href="https://github.com/marcosvcsantos" style="font-weight: 700;">Marcos Vinicius</a> dentro da matéria de Desenvolvimento de Sistemas pelo <i style="font-weight: 700;" >SENAI - Alagoinhas.</i></p>
 
