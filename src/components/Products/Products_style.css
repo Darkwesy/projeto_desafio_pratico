@@ -43,10 +43,10 @@
 
 .Products__Wrapper__Description__List__Item {
   font-weight: 200;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .Products__Wrapper__Description__List__Item > span {
-  font-weight: 600;
+  font-weight: 800;
   color: pink;
 }
