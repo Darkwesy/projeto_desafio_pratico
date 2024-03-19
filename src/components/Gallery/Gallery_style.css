@@ -8,6 +8,7 @@
 
 .Gallery__Wrapper__BigCard {
   width: 50%;
+  max-width: 800px;
   height: 800px;
   max-height: 800px;
   flex-shrink: 0;
@@ -27,13 +28,13 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  max-height: calc(100vh - 400px);
+  max-height: calc(100vh - 300px);
   overflow-y: auto;
 }
 
 .Gallery__Wrapper__Card__Image {
-  height: 140px;
-  width: 140px;
+  height: 150px;
+  width: 150px;
   object-fit: cover;
   border-radius: 4px;
   transition: all 0.3s ease;

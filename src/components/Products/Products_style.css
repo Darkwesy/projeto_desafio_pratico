@@ -1,6 +1,6 @@
 .Products__Wrapper {
   padding: 0 15%;
-  max-height: 100%;
+  max-height: 600px;
   gap: 8px;
   display: grid;
   grid-template-columns: 2fr 2fr;
@@ -18,6 +18,7 @@
 }
 
 .Products__Wrapper__Description {
+  max-height: 600px;
   grid-area: PWC;
   background: #ffffff12;
   border-radius: 1rem;
@@ -42,6 +43,7 @@
 
 .Products__Wrapper__Description__List__Item {
   font-weight: 200;
+  font-size: 2rem;
 }
 
 .Products__Wrapper__Description__List__Item > span {
