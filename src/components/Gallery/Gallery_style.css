@@ -26,18 +26,16 @@
 
 .Gallery__Wrapper__Card {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
   width: 50%;
-  max-height: calc(100vh - 200px);
+  max-height: calc(100vh - 160px);
   overflow-y: hidden;
 }
 
 .Gallery__Wrapper__Card__Image {
-  height: 147px;
-  width: 147px;
+  height: 148px;
+  width: 148px;
   object-fit: cover;
   border-radius: 4px;
   transition: all 0.3s ease;
