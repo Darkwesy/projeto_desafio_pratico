@@ -56,6 +56,14 @@
   font-weight: 600;
   line-height: normal;
   background-color: transparent;
-  transition: all 0.3s linear;
+  transition: color 0.3s ease-in-out, background-position 0.3s ease-in-out;
   cursor: pointer;
+  background: linear-gradient(to right, #F2F2F2 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+}
+
+.card__contacts__button > a > button:hover {
+  background-position: 0 0;
+  color: #000000;
 }
